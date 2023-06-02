@@ -52,9 +52,15 @@ function App() {
 
   function getAlbumInfo(titre: string, year:string, image:string)
   {
-      console.log(titre);
-      console.log(year);
-      console.log(image);
+      setAlbumInfo(false);
+      setListAlbum(true);
+      return (
+          <div>
+              <p>titre</p>
+              <p>year</p>
+              <p>image</p>
+          </div>
+      )
   }
 
   return (
@@ -82,7 +88,7 @@ function App() {
           )}
       </div>
       <div id="album" hidden={albumInfo}>
-          <AlbumInfo />
+
       </div>
 
       <div id="author" hidden={authorInfo}>
