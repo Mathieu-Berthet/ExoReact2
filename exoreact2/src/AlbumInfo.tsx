@@ -8,6 +8,11 @@ import axios from 'axios';
 
 function AlbumInfo()
 {
+    function myTest()
+    {
+        console.log("test");
+    }
+
     return (
         <div>
 
